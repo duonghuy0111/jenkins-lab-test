@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    // Tự kiểm tra Git theo lịch, có commit mới trên branch job đang theo -> tự chạy 
+    // Tự kiểm tra Git theo lịch, có commit mới trên branch job đang theo -> tự chạy
     triggers {
         pollSCM('H/3 * * * *')
     }
