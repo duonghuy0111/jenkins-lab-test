@@ -37,7 +37,7 @@ pipeline {
     post {
         success {
             // Lưu thư mục build để tải về / xem trên giao diện Jenkins
-            archiveArtifacts artifacts: 'dist/**/*', fingerprint: true, allowEmptyArchive: false
+            archiveArtifacts artifacts: 'my-react-app/dist/**/*', fingerprint: true, allowEmptyArchive: false
         }
         failure {
             echo 'Pipeline thất bại - xem log từng stage (install & lint & build)'
